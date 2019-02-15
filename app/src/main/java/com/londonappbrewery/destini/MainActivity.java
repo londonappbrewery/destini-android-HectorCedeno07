@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
        } else if (mStoryIndex == 3) {
             mStoryIndex = 6;
             mStoryTextView.setText(R.string.T6_End);
+            mButtonBottom.setVisibility(mStoryTextView.GONE);
+            mButtonTop.setVisibility(mStoryTextView.GONE);
        } else if (mStoryIndex == 2) {
            mStoryIndex = 3;
            mStoryTextView.setText(R.string.T3_Story);
@@ -63,9 +65,13 @@ public class MainActivity extends AppCompatActivity {
         } else if (mStoryIndex == 3) {
             mStoryIndex = 5;
             mStoryTextView.setText(R.string.T5_End);
+            mButtonBottom.setVisibility(mStoryTextView.GONE);
+            mButtonTop.setVisibility(mStoryTextView.GONE);
         } else if (mStoryIndex == 2) {
             mStoryIndex = 4;
             mStoryTextView.setText(R.string.T4_End);
+            mButtonBottom.setVisibility(mStoryTextView.GONE);
+            mButtonTop.setVisibility(mStoryTextView.GONE);
         }
 
         Toast myToast = Toast.makeText(this,"Storie # " + mStoryIndex, Toast.LENGTH_LONG);
